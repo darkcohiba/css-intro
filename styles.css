@@ -1,0 +1,37 @@
+/* root */
+
+/* selectors */
+    /* pseduo selectors */
+
+/* data types */
+    /* rem  */
+    /* em */
+    /* px */
+    /* percents */
+    /* colors */
+
+/* inheritance */
+/* initial
+-add this to any css property and the value will be the formal css default, according to css standards and not browser specific.
+inherit
+-add this to any css property and it will inherit the value from the parent. This is default for some css properties, such as font size and not for others, such as border.
+unset
+-will set the value to initial or inherit based on the property default
+revert
+-this will set the value to the browser default */
+/* example */
+p {
+    color: inherit
+}
+
+/* validations */
+
+
+/* grid */
+
+/* flex box */
+
+/* media query */
+
+/* light and dark mode */
+

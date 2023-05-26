@@ -150,5 +150,17 @@ Align Flex Items: Use the justify-content property to align items along the main
 
 
 /* light and dark mode */
+body {
+    /* Default styles for light mode */
+    background-color: #ffffff;
+    color: #000000;
+}
 
+@media (prefers-color-scheme: dark) {
+/* Styles for dark mode */
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+}
 /*  */

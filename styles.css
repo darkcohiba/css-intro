@@ -4,7 +4,10 @@
     --main-color: hotpink;
     --secondary-color: aqua;
     --pane-padding: 5px 42px;
+    background-color: #000000
 }
+
+
 /* selectors */
     /* selectors are used to select different parts of our code to apply CSS to it
     basic selectors are class, id, element and attribute. We can get further into the weeds of selectors with pseudo selectors. */
@@ -143,6 +146,10 @@ Align Flex Items: Use the justify-content property to align items along the main
     /* … */
 }
 
+@media (min-width: 400px) and (min-height: 862px){
+    
+}
+
 /* we can also target the entire screen or print */
 @media print, screen {
     /* … */
@@ -158,6 +165,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
 /* Styles for dark mode */
+
 body {
     background-color: #000000;
     color: #ffffff;

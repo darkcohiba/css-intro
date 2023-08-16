@@ -4,9 +4,9 @@
     --main-color: hotpink;
     --secondary-color: aqua;
     --pane-padding: 5px 42px;
+    --hero-spacing: 10px 10px 10px 10px;
     background-color: #000000
 }
-
 
 /* selectors */
     /* selectors are used to select different parts of our code to apply CSS to it
@@ -55,7 +55,7 @@
     Example: div:empty { display: none; } */
 
 
-    /* validations */
+/* validations */
 
 /* Pseudo-selectors in CSS are primarily used for styling purposes rather than performing form validations. However, you can utilize pseudo-selectors in combination with CSS attribute selectors and the :valid and :invalid pseudo-classes to visually indicate the validity of form inputs. */
 
@@ -143,16 +143,31 @@ Align Flex Items: Use the justify-content property to align items along the main
 /* -general idea of a media query is to set css properties based on screen size, the screen itself, orientation and more */
 /* check if the screen is in landscape and a width of less than 30em */
 @media (min-width: 30em) and (orientation: landscape) {
-    /* … */
+  :root {
+    --main-color: hotpink;
+    --secondary-color: aqua;
+    --pane-padding: 5px 42px;
+    --hero-spacing: 10px 10px 10px 10px;
+    background-color: #000000
+  } 
 }
 
-@media (min-width: 400px) and (min-height: 862px){
-    
+@media (min-width: 500px) and (min-height: 851px){
+    .footer p {
+      font-size: 10px;
+    }
+    .sidebar{
+      display: none;
+    }
+}
+
+@media (min-width: 774) and (min-height: 851px){
+
 }
 
 /* we can also target the entire screen or print */
-@media print, screen {
-    /* … */
+@media print, screen{
+  /* … */
 }
 
 
@@ -165,10 +180,48 @@ body {
 
 @media (prefers-color-scheme: dark) {
 /* Styles for dark mode */
-
-body {
-    background-color: #000000;
-    color: #ffffff;
-}
+  body {
+      background-color: #000000;
+      color: #ffffff;
+  }
 }
 /*  */
+
+
+
+.shake {
+	-webkit-animation: swirl-out-bck 0.6s ease-in both;
+	        animation: swirl-out-bck 0.6s ease-in both;
+}
+
+
+/**
+ * ----------------------------------------
+ * animation swirl-out-bck
+ * ----------------------------------------
+ */
+ @-webkit-keyframes swirl-out-bck {
+    0% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-540deg) scale(0);
+              transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+  }
+  @keyframes swirl-out-bck {
+    0% {
+      -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: rotate(-540deg) scale(0);
+              transform: rotate(-540deg) scale(0);
+      opacity: 0;
+    }
+  }
+  

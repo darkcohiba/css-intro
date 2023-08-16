@@ -2,25 +2,30 @@
 <html>
 <head>
   <style>
-    *{
-        /* border: 2px solid black; */
-    }
+    /* *{
+        border: 2px solid black;
+    } */
     .flex-container {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 300px;
+      /* flex-direction: row;
+      flex-wrap: wrap; */
+      /* flex-flow: row wrap; */
+
       /* flex-direction: column; */
     }
 
-    
     .flex-item {
       margin: 10px;
       padding: 20px;
       background-color: lightblue;
     }
-    .flex-container div:first-child{
-        border: 2px solid black;
+
+
+    .flex-container div:first-child:hover{
+        border: 2px solid red;
     }
     .flex-container div:last-child:hover{
         border: 2px solid black;
@@ -32,7 +37,7 @@
 </head>
 <body>
   <div class="flex-container">
-    <div class="flex-item" id="first-child">Item 1</div>
+    <div class="flex-item">Item 1</div>
     <div class="flex-item">Item 2</div>
     <div class="flex-item">Item 3</div>
     <div class="flex-item">Item 4</div>

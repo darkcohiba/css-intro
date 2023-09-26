@@ -5,8 +5,10 @@
     --secondary-color: aqua;
     --pane-padding: 5px 42px;
     --hero-spacing: 10px 10px 10px 10px;
+
     background-color: #000000
 }
+
 
 /* selectors */
     /* selectors are used to select different parts of our code to apply CSS to it
@@ -152,7 +154,7 @@ Align Flex Items: Use the justify-content property to align items along the main
   } 
 }
 
-@media (min-width: 500px) and (min-height: 851px){
+@media (min-width: 1260px) and (min-height: 851px){
     .footer p {
       font-size: 10px;
     }

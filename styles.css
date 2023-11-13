@@ -176,9 +176,39 @@ Align Flex Items: Use the justify-content property to align items along the main
 
 @media (min-width: 774px){
   body{
-    /* background-color:black; */
-    /* font-size: 10rem */
+    background-color: black;
+    font-size: 2rem
+  }
+}
 
+@media (min-width: 900px){
+  body{
+    background-color:yellow;
+    font-size: 3rem
+  }
+}
+
+@media (min-width: 1000px){
+  body{
+    background-color:blue;
+    font-size: 5rem
+  }
+}
+
+@media (min-width: 1250px){
+  body{
+    background-color:pink;
+    font-size: 7rem
+  }
+}
+
+@media (min-width: 1300px){
+  body{
+    background-color:teal;
+    font-size: 7rem
+  }
+  p{
+    display: none
   }
 }
 

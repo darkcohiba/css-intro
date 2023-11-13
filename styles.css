@@ -1,14 +1,25 @@
 /* root */
 /* root is helpful for selecting global variables and setting a base specifity for elements. Root is considered a CSS pseudo class. */
 :root {
+  /* set variables */
     --main-color: hotpink;
     --secondary-color: aqua;
     --pane-padding: 5px 42px;
     --hero-spacing: 10px 10px 10px 10px;
-
-    background-color: #000000
+    /* set a global background color */
+    /* background-color: black */
 }
 
+p {
+  color: var(--main-color);
+  border: 2px solid red;
+  width: fit-content
+}
+
+p:hover{
+  color: var(--secondary-color);
+  padding: var(--hero-spacing)
+}
 
 /* selectors */
     /* selectors are used to select different parts of our code to apply CSS to it
@@ -110,9 +121,10 @@ unset
 revert
 -this will set the value to the browser default */
 /* example */
-p {
-    color: inherit
-}
+
+/* p {
+    color: yellow
+} */
 
 
 
@@ -144,27 +156,30 @@ Align Flex Items: Use the justify-content property to align items along the main
 /* media query */
 /* -general idea of a media query is to set css properties based on screen size, the screen itself, orientation and more */
 /* check if the screen is in landscape and a width of less than 30em */
-@media (min-width: 30em) and (orientation: landscape) {
+/* @media (min-width: 30em) and (orientation: landscape) {
   :root {
     --main-color: hotpink;
     --secondary-color: aqua;
     --pane-padding: 5px 42px;
     --hero-spacing: 10px 10px 10px 10px;
-    background-color: #000000
   } 
-}
+} */
 
-@media (min-width: 1260px) and (min-height: 851px){
+/* @media (min-width: 1260px) and (min-height: 851px){
     .footer p {
       font-size: 10px;
     }
     .sidebar{
       display: none;
     }
-}
+} */
 
-@media (min-width: 774) and (min-height: 851px){
+@media (min-width: 774px){
+  body{
+    /* background-color:black; */
+    /* font-size: 10rem */
 
+  }
 }
 
 /* we can also target the entire screen or print */
@@ -176,18 +191,18 @@ Align Flex Items: Use the justify-content property to align items along the main
 /* light and dark mode */
 body {
     /* Default styles for light mode */
-    background-color: #ffffff;
-    color: #000000;
+    /* background-color: white; */
+    /* color: black; */
 }
 
 @media (prefers-color-scheme: dark) {
 /* Styles for dark mode */
   body {
-      background-color: #000000;
-      color: #ffffff;
+      /* background-color: #000000; */
+      /* color: #ffffff; */
   }
 }
-/*  */
+
 
 
 

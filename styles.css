@@ -18,7 +18,7 @@ p {
 
 p:hover{
   color: var(--secondary-color);
-  padding: var(--hero-spacing)
+  padding: var(--hero-spacing);
 }
 
 /* selectors */
@@ -156,6 +156,18 @@ Align Flex Items: Use the justify-content property to align items along the main
 /* media query */
 /* -general idea of a media query is to set css properties based on screen size, the screen itself, orientation and more */
 /* check if the screen is in landscape and a width of less than 30em */
+
+/* Small devices such as large phones (640px and up) */
+/* @media only screen and (min-width: 40em) {...} */
+
+/* Medium devices such as tablets (768px and up) */
+/* @media only screen and (min-width: 48em) {...} */
+
+/* Large devices such as laptops (1024px and up) */
+/* @media only screen and (min-width: 64em) {...} */
+
+/* Largest devices such as desktops (1280px and up) */
+/* @media only screen and (min-width: 80em) {...} */
 /* @media (min-width: 30em) and (orientation: landscape) {
   :root {
     --main-color: hotpink;
@@ -173,39 +185,46 @@ Align Flex Items: Use the justify-content property to align items along the main
       display: none;
     }
 } */
-
-@media (min-width: 774px){
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em){
   body{
     background-color: black;
     font-size: 2rem
   }
 }
-
-@media (min-width: 900px){
+/* Medium devices such as tablets (768px and up) */
+@media (min-width: 48em){
   body{
     background-color:yellow;
     font-size: 3rem
   }
 }
-
-@media (min-width: 1000px){
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em){
   body{
     background-color:blue;
     font-size: 5rem
   }
-}
 
-@media (min-width: 1250px){
+  p{
+    display: none
+  }
+}
+/* Largest devices such as desktops (1280px and up) */
+@media (min-width: 80em){
   body{
     background-color:pink;
     font-size: 7rem
+  }
+  p{
+    display:block
   }
 }
 
 @media (min-width: 1300px){
   body{
     background-color:teal;
-    font-size: 7rem
+    font-size: 9rem
   }
   p{
     display: none
@@ -227,10 +246,13 @@ body {
 
 @media (prefers-color-scheme: dark) {
 /* Styles for dark mode */
-  body {
-      /* background-color: #000000; */
-      /* color: #ffffff; */
-  }
+:root{
+background-color: #000000;
+}
+  /* body {
+      background-color: #000000;
+      color: #ffffff;
+  } */
 }
 
 

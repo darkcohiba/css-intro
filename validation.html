@@ -2,27 +2,55 @@
 <html>
 <head>
   <style>
+    input{
+      padding: 5px;
+      margin: 5px;
+    }
     input:required:valid {
-      border-color: green;
+      border: 6px solid green;
     }
 
     input:required:invalid {
-      border-color: red;
+      border: 6px solid red;
     }
     
     input[type="submit"]:disabled {
       background-color: gray;
       cursor: not-allowed;
     }
+
+    body{
+      background-color: black;
+    }
+
+    .form-container{
+      background-color: antiquewhite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 500px
+    }
+
+    form{
+      padding: 10px 10px 10px 10px;
+      margin: 20px 20px 20px 20px;
+      width: fit-content;
+      height: fit-content;
+      background-color: yellow;
+      border: 2px blue solid
+    }
   </style>
 </head>
 <body>
-  <form>
-    <input type="text" name="name" placeholder="Name" required>
-    <br>
-    <input type="email" name="email" placeholder="Email" required>
-    <br>
-    <input type="submit" value="Submit" disabled>
-  </form>
+  <div class="form-container">
+    <form>
+      <input type="text" name="name" placeholder="Name" required>
+      <br>
+      <input type="email" name="email" placeholder="Email" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
 </body>
 </html>
